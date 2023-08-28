@@ -13,7 +13,7 @@ services:
       - pg_data:/var/lib/postgresql/data
 
   backend:
-    build: ./backend/
+    image: alexk090591/kittygram_backend
     env_file: .env
     volumes:
       - static:/backend_static
@@ -23,14 +23,14 @@ services:
 
   frontend:
     env_file: .env
-    build: ./frontend/
+    image: alexk090591/kittygram_frontend
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
     
 
   gateway:
-    build: ./nginx/
+    image: alexk090591/kittygram_gateway
     env_file: .env
     volumes:
       - static:/static
