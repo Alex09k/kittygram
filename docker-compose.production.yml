@@ -28,7 +28,6 @@ services:
     volumes:
       - static:/static
     
-
   gateway:
     image: alexk090591/kittygram_gateway
     env_file: .env
