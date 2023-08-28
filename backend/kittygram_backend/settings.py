@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='retwd321')
 
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['84.201.143.238', '127.0.0.1', 'localhost', 'nsknsk.ddnsking.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
