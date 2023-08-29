@@ -22,17 +22,8 @@
 - frontend: cd frontend npm i rpm run dev
 - backend: cd backend python -m venv venv
 
-## Linux/macOS:
-  source env/bin/activate
- 
-## windows:
-  source venv/Scripts/activate
-  pip install -r requirements.txt
-  python manage.py migrate
-  python manage.py runserver
-  При успешном старте получим backend приложение на 127.0.0.1:9000
 
-## Альтернативная установка возможна при налиичи на локальом компьютере Docer compose
+## Установка возможна при налиичи на локальом компьютере Docker compose
 
 # Запустите проект из корня с помощью команды:
 - docker compose up
