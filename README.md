@@ -34,6 +34,9 @@
 # Скопируйте статику командой:
 - docker compose exec backend cp -r /app/collected_static/. /static/static/
 
+# Приминить миграции:
+- docker compose exec backend python manage.py migrate
+
 # По адресу http://127.0.0.1:9000/ сайт будет доступен.
  
  ## Для взаимодействия с приложением через API предусмотрены следующие методы:
